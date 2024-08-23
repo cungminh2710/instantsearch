@@ -37,7 +37,9 @@ const config = {
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
   ],
-  transformIgnorePatterns: ['node_modules/(?!(search-insights)/)'],
+  transformIgnorePatterns: [
+    'node_modules/(?!(search-insights|algoliasearch)/)',
+  ],
   transform: {
     '^.+\\.(j|t)sx?$': 'babel-jest',
     '^.+\\.vue$': '@vue/vue2-jest',
